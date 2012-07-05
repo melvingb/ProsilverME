@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+<!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD. Although MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD. No support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.5.xsd">
+	<header>
+		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
+
+		<title lang="en"><![CDATA[ProsilverME - Cookie Color Picker]]></title>
+		<title lang="es"><![CDATA[ProsilverME - Selector de color con Cookies]]></title>
+
+		<description lang="en"><![CDATA[With this modification you will made the color picker to works with the forum cookie.
+		This make possible that the selected colour works on every possible seccion of your board not matter if it is a MOD page or not.]]></description>
+		<description lang="es"><![CDATA[Con esta modificación usted hará que el selector de colores funcione con la cookie del foro.
+		Esto hace posible que el color seleccionado funcione en todos las secciones posibles del foro, sin importar si es una página de un MOD o no.]]></description>
+
+		<author-notes lang="en"><![CDATA[This style inheritance from prosilver, so be sure that prosilver is present and installed on your board before you are going to install this Style.
+
+		If you need help intalling a style, please visit this link : http://www.phpbb.com/kb/article/how-to-install-styles-on-phpbb3/
+
+		Special thanks to leviatan21, Christian Bullock and pit-PL for sharing their knowledge]]></author-notes>
+		<author-notes lang="es"><![CDATA[Este estilo hereda de estilo prosilver, así que asegúrese de que prosilver está presente e instalado en su foro, antes de instalar este estilo.
+		
+		Si necesita ayuda con instalarlo un estilo, por favor visite este enlace: http://www.phpbb.com/kb/article/how-to-install-styles-on-phpbb3/
+
+		Un agradecimiento especial a leviatan21, Christian Bullock y pit-PL por compartir sus conocimientos]]></author-notes>
+
+		<author-group>
+			<author>
+				<realname><![CDATA[Melvin Garcia]]></realname>
+				<username><![CDATA[nextgen]]></username>
+				<homepage><![CDATA[http://www.phpbbnxg.com]]></homepage>
+				<email><![CDATA[webmaster@phpbbnxg.com]]></email>
+			</author>
+		</author-group>
+
+		<mod-version>[ALPHA] 0.0.5</mod-version>
+
+		<installation>
+			<level>easy</level>
+			<time>120</time>
+			<target-version>3.0.9 - 3.0.10</target-version>
+		</installation>
+
+	</header>
+
+	<action-group>
+		<open src="root/includes/functions.php">
+			<edit>
+				<find><![CDATA[		'A_COOKIE_SETTINGS']]></find>
+				<action type="before-add"><![CDATA[// ProsilverME Style cookie - Start
+		'A_COOKIE_NAME'			=> addslashes($config['cookie_name']),
+// ProsilverME Style cookie - End
+]]></action>
+			</edit>
+		</open>
+
+		<diy-instructions lang="en"><![CDATA[Style customizations :
+	Open : root/styles/prosilverme/_me_config.html
+	
+	Variables you can configure below: 
+	$ME_PROFILES = Display poster profiles on left or right side of viewtopic : 'left'/'right'
+	$ME_COLOUR_SWITCHER = Display the "Colour switcher" box on nav bar? 1 = enabled/visible, 0 = disabled/hidden.
+	$ME_COLOUR_DEFAULT = Choose the default colour : 'red'/'green'/'black'/'blue' / 'pink' / 'purple'
+	$ME_WIDTH = Choose your width : 940px = Fixed/100% = Fluid
+	$ME_SIDEBAR = This option enable or disable the sidebar : 'none' = disabled / 'left' = enable a sidebar al left side / 'right'  = enable a sidebar at right side]]></diy-instructions>
+		<diy-instructions lang="es"><![CDATA[Personalizaciones de estilo:
+	Abrr : root/styles/prosilverme/_me_config.html
+	
+	Las variables se pueden configurar a continuación:
+	$ME_PROFILES_ON_LEFT = Mostrar los perfiles de autores al lado derecho o izquierdo de pantalla en vista de temas: 1 = izquierda, 0 = derecha.
+	$ME_COLOUR_SWITCHER = Mostrar el "Selector de Color" en la barra de navegación? 1 = activado/visible, 0 = desactivado/oculta.
+	$ME_COLOUR_DEFAULT = Elija el color por defecto: 'red' / 'geen' / 'black' / 'blue' / 'pink' / 'purple'
+	$ME_WIDTH = Elija su ancho: 940px = fijo/100% = fluido
+	$ME_SIDEBAR = Esta opción activa o desactiva la barra lateral: 'none' = desactivado / 'left' = activar una barra lateral al lado izquierdo / 'right' = activar una barra lateral en el lado derecho]]></diy-instructions>
+
+	</action-group>
+</mod>
