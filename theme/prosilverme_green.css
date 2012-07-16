@@ -6,6 +6,10 @@ body.fixedwide {
     background-color: #589a49;
 }
 
+body.fullwide { 
+	color: #35522b;
+}
+
 #wrap.fixedwide {
 	border: 1px solid #cbebca; /* navbar */
 }
@@ -491,17 +495,4 @@ dl.codebox code {
 
 .pmlist li.pm_foe_colour, .pm_foe_colour {
 	border-color: #000000;
-}
-
-.forabg_header {
-	padding: 0 5px;
-	background-color: #ccc;
-	background-image: url("images/prosilverme_green/bg_list.gif");
-
-}
-
-.forabg_footer {
-	border-left: 1px solid #cccccc;
-    border-right: 1px solid #cccccc;
-	clear: both;
 }

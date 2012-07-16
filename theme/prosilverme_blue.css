@@ -3,7 +3,11 @@ This is called after phpBB's stylesheet, so !important shouldn't be required in 
 
 body.fixedwide {
 	color: #536482;
-    background-color: #0b79c6;
+    background-color: #0e599b;
+}
+
+body.fullwide {
+	color: #536482;
 }
 
 #wrap.fixedwide {
@@ -883,17 +887,4 @@ a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, inpu
 
 input.disabled {
 	color: #666666;
-}
-
-.forabg_header {
-	padding: 0 5px;
-	background-color: #ccc;
-	background-image: url("images/bg_list.gif");
-
-}
-
-.forabg_footer {
-	border-left: 1px solid #cccccc;
-    border-right: 1px solid #cccccc;
-	clear: both;
 }
