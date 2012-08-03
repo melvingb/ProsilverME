@@ -1,0 +1,109 @@
+/* Color Block Based in Supernova Style by Christian Bullock */
+.rtl .colour-block img {
+	margin-left: 0px !important;
+}
+div#colourblock {
+	visibility: hidden;
+	margin-top: 10px;
+	margin-right: 3px;
+}
+div.colour-block {
+	background: transparent url("{T_THEME_PATH}/images/colour_block_right.png") no-repeat scroll top right; 
+	float: right;
+	height: 26px;
+	padding-right: 7px;
+	line-height: 25px;
+}
+div.colour-block span {
+	height: 26px;
+	background: transparent url("{T_THEME_PATH}/images/colour_block_left.png") no-repeat; 
+	display: block;
+	padding-left: 29px;
+	padding-top: 2px !important;
+}
+div.colour-block span a {outline: none;}
+img.colour-block {
+	margin-right: 0px !important;
+}
+
+/** bodys **/
+body.fullwide { }
+body.fixedwide {
+	background-color: #e7e7e7;
+}
+
+/** wrappers **/
+#wrap {
+	background-color: #ffffff;
+}
+#wrap.fixedwide {
+	border: 2px solid #ffffff;
+	margin: 0 auto;
+	padding: 1em;
+	border-radius: 5px;
+    -moz-box-shadow: 0 0 2px #6d6a6b;
+    -webkit-box-shadow: 0 0 2px#6d6a6b;
+    box-shadow: 0 0 2px #6d6a6b;	
+}
+#wrap.fullwide {
+	margin: 0 auto;
+	padding: 0 2em;
+}
+
+/** Page body with sidebar **/
+#page-body.left {
+	float: right;
+	margin: 4px 0;
+	width: 79%;
+	clear :both;
+}
+#page-body.right {
+	float: left;
+	margin: 4px 0;
+	width: 79%;
+	clear: both;
+}
+
+/** Sidebar **/
+#page-sidebar.left {
+	float: left;
+	margin-top: 4px;
+	width: 20%;
+}
+#page-sidebar.right {
+	float: right;
+	margin-top: 4px;
+	width: 20%;
+}
+#page-sidebar li.row {
+	padding: 5px;
+}
+
+/** Profiles **/
+.postbody.left {
+	float: right;
+	width: 77%;
+}
+.postprofile.left {
+	float: left;
+	border-left: none;
+	border-right: 1px solid #FFFFFF;
+	margin-top: -5px;
+}
+.postprofile dt.left {
+	margin-top: 10px;
+}
+
+.inputbox { 
+border-radius: 3px;
+}
+
+
+#message-box textarea {
+	color: #333333;
+	border-radius: 3px;
+}
+
+.descrip { 
+margin-left: 5px;
+}
