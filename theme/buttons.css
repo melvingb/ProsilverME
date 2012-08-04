@@ -1,8 +1,5 @@
 /* Button Styles
 ---------------------------------------- */
-/* Rollover buttons
-   Based on: http://wellstyled.com/css-nopreload-rollovers.html and subsilver3
-----------------------------------------*/
 .buttons {
 	float: left;
 	margin-top: -1px;
@@ -28,6 +25,14 @@
 	background-image: url("{T_THEME_PATH}/images/prosilverme_blue/big_button_rtl.gif");
 }
 
+.buttons div a:hover, .buttons div.locked-icon a {
+	background-position: 0 -30px;
+}
+
+* html .buttons div a:hover, * html .buttons div.locked-icon a:hover {
+	background-position: 0 0;
+}
+
 /* Rolloff state */
 .buttons div a {
 	display: block;
@@ -36,7 +41,7 @@
 	line-height: 20px;
 	font-size: 14px;
 	font-weight: bold;
-	font-family: "Trebuchet MS", Arial, sans-serif;
+	font-family: 'Ropa Sans', Arial, sans-serif;
 	text-decoration: none;
 	background: transparent none 0 0 no-repeat;
 	text-shadow: 1px 1px #fff, -1px -1px #ddd;
@@ -52,29 +57,13 @@
 	background-image: url("{T_THEME_PATH}/images/prosilverme_blue/big_button_rtl_bg.gif");
 }
 
-.buttons div a:hover, .buttons div.locked-icon a {
-	background-position: 0 -30px;
-}
-
-* html .buttons div a:hover, * html .buttons div.locked-icon a:hover {
-	background-position: 0 0;
-}
-
 .buttons div a:link, .buttons div a:visited {
 	color: #004B8D;
-}
-
-.buttons a:link:first-letter, .buttons a:visited:first-letter  {
-	color: #d40000;
 }
 
 .buttons div a:hover, .buttons div a:active {
 	color: #d40000;
 	text-decoration: none;
-}
-
-.buttons a:hover:first-letter, .buttons a:active:first-letter {
-	color: #004B8D;
 }
 
 /* Sub-header (navigation bar)
