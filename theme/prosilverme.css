@@ -301,3 +301,33 @@ fieldset.polls dd div {
 .rtl .pollbar5 {
 	border-left-color: #D11A4E;
 }
+
+/* Collapsible categories */
+.dbx-clone {	position: absolute; visibility: hidden;}
+
+.dbx-clone, .dbx-clone .dbx-handle-cursor {cursor: move !important;}
+
+.dbx-dummy {
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.dbx-group, .dbx-box, .dbx-handle {position: relative; display: block;}
+
+/* handle cursors are in a class of their own
+   so they only get applied if the script is supported */
+.dbx-handle-cursor {	cursor: move;}
+
+.dbx-handle {
+	float: right;
+	width: 10px;
+	margin-top: 4px;
+	padding: 0 5px;
+	background: url("{T_THEME_PATH}/images/move-icon.gif") no-repeat;
+}
+
+.dbx-content * {display: none;}
