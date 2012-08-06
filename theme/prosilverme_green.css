@@ -3,7 +3,7 @@ This is called after phpBB's stylesheet, so !important shouldn't be required in 
 
 body.fixedwide {
 	color: #35522b;
-    background-color: #589a49;
+    background-color: #e8fae7;
 }
 
 body.fullwide { 
