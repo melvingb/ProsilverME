@@ -64,6 +64,14 @@ hr.dashed {
 	background-color: #cadceb;
 }
 
+div.navbg {
+	background: transparent url("images/navright.png") no-repeat scroll top right; 
+}
+
+div.navbg span {
+	background: transparent url("images/navleft.png") no-repeat;
+}
+
 .forabg {
     background-image: url("images/bg_list.gif");
 	background-color: #0d599a;
@@ -202,23 +210,6 @@ a:link	{ color: #105289; }
 a:visited	{ color: #105289; }
 a:hover	{ color: #D31141; }
 a:active	{ color: #368AD2; }
-
-/* Links on gradient backgrounds */
-#search-box a:link, .navbg a:link, .forumbg .header a:link, .forabg .header a:link, th a:link {
-	color: #FFFFFF;
-}
-
-#search-box a:visited, .navbg a:visited, .forumbg .header a:visited, .forabg .header a:visited, th a:visited {
-	color: #FFFFFF;
-}
-
-#search-box a:hover, .navbg a:hover, .forumbg .header a:hover, .forabg .header a:hover, th a:hover {
-	color: #A8D8FF;
-}
-
-#search-box a:active, .navbg a:active, .forumbg .header a:active, .forabg .header a:active, th a:active {
-	color: #C8E6FF;
-}
 
 /* Links for forum/topic lists */
 a.forumtitle {

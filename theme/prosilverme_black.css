@@ -35,6 +35,14 @@ h3 {
 	background-color: #c2c2c2;
 }
 
+div.navbg {
+	background: transparent url("images/prosilverme_black/navright.png") no-repeat scroll top right; 
+}
+
+div.navbg span {
+	background: transparent url("images/prosilverme_black/navleft.png") no-repeat;
+}
+
 .forabg {
 	background-color: #353435;
 	background-image: url("images/prosilverme_black/bg_list.gif");
@@ -53,9 +61,15 @@ ul.forums {
 /* CSS donde se manejan los colores de los inputs y textarea */
 #message-box textarea:hover, #message-box textarea:focus, textarea.inputbox:hover {border-color: #000000;}
 
-#search-box a:hover, .navbg a:hover, .forumbg .header a:hover, .forabg .header a:hover, th a:hover {
-	color: #7d7c7c;
+.navbg a:visited, .navbg a:link, .navbg a:active {
+    color: #5e5e5e;
 }
+
+.navbg a:hover {
+    color: #a3a3a3;
+}
+
+.breadcrumbs a:hover, a.options a:hover{color: #a3a3a3;}
 
 /* Hover states */
 a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {

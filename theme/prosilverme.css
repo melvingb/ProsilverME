@@ -2,26 +2,16 @@
 .rtl .colour-block img {
 	margin-left: 0px !important;
 }
-div#colourblock {
-	visibility: hidden;
-	margin-top: 10px;
-	margin-right: 3px;
-}
+
 div.colour-block {
-	background: transparent url("{T_THEME_PATH}/images/colour_block_right.png") no-repeat scroll top right; 
 	float: right;
 	height: 26px;
-	padding-right: 7px;
+	display: block;	/* new function */
+	margin-top: 10px; /* new function */
+	padding-right: 6px;
 	line-height: 25px;
 }
-div.colour-block span {
-	height: 26px;
-	background: transparent url("{T_THEME_PATH}/images/colour_block_left.png") no-repeat; 
-	display: block;
-	padding-left: 29px;
-	padding-top: 2px !important;
-}
-div.colour-block span a {outline: none;}
+
 img.colour-block {
 	margin-right: 0px !important;
 }
@@ -331,3 +321,99 @@ fieldset.polls dd div {
 }
 
 .dbx-content * {display: none;}
+
+/* new navbar */
+div.navbg {
+	background: none; 
+	float: left;
+	height: 49px;
+	padding-right: 0.8px;
+	line-height: 49px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+div.navbg span {
+	background: none; 
+	display: block;
+	padding-left: 6px;
+	height: 49px;
+	letter-spacing: -1px;
+}
+
+div.navbg span, div.navbg span a {
+	font-weight: bold;
+	font-family: Verdana, Geneva, sans-serif;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #096fb5;
+	text-shadow: none;
+}
+
+.navbg img {vertical-align: middle; margin-top: -2px; margin-right: 2px;}
+
+.breadcrumbs {float: left; margin-bottom: 5px;}
+.options {float: right; margin-bottom: 5px;}
+
+.breadcrumbs a, .options a {
+	font-weight: bold;
+	font-family: Verdana, Geneva, sans-serif; 
+	color: #0870D1;
+	font-size: 12px;
+}
+
+.breadcrumbs a:hover, a.options a:hover{color: #0A8EE6;}
+
+.breadcrumbs img, .options img {
+	vertical-align: middle;
+	margin-top: -6px;
+	margin-right: 6px;
+}
+
+/*	new colour sweet */
+		
+.reveal-modal-bg { 
+	width: 100px;
+	background: #000;
+	background: rgba(0,0,0,.8);
+	z-index: 100;
+	display: none;
+	top: 0;
+	right: 0; 
+}
+	
+.reveal-modal {
+	visibility: hidden;
+	top: 183px; 
+	width: 110px;
+	right:  155px;
+	background: #FFF;
+	background: rgba(0,0,0,.8);
+	position: absolute;
+	z-index: 101;
+	padding: 3px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	-box-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+		
+.reveal-modal-big {
+	visibility: hidden;
+	top: 170px; 
+	width: 110px;
+	right:  15px;
+	background: #FFF;
+	background: rgba(0,0,0,.8);
+	position: absolute;
+	z-index: 101;
+	padding: 3px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	-box-shadow: 0 0 10px rgba(0,0,0,.4);
+}
