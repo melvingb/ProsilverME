@@ -3,17 +3,36 @@
 	margin-left: 0px !important;
 }
 
-div.colour-block {
+div.colour-block  {
 	float: right;
-	height: 26px;
+	height: 30px;
 	display: block;	/* new function */
-	margin-top: 10px; /* new function */
+	margin-top: 12px; /* new function */
 	padding-right: 6px;
 	line-height: 25px;
+	cursor:pointer;
+	color: #e34e0c;
 }
 
 img.colour-block {
 	margin-right: 0px !important;
+}
+
+.colour-block-hover {
+	margin-top: -3px; /* new function */
+	margin-right: -3px;
+	background: #000;
+	background: rgba(0,0,0,.8);
+	padding: 3px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	-box-shadow: 0 0 10px rgba(0,0,0,.4);	
+	display: none;
+	position: absolute;
+	z-index: 9999; /* Make the div hover above the nav bar */
 }
 
 /** bodys **/
@@ -368,52 +387,4 @@ div.navbg span, div.navbg span a {
 	vertical-align: middle;
 	margin-top: -6px;
 	margin-right: 6px;
-}
-
-/*	new colour sweet */
-		
-.reveal-modal-bg { 
-	width: 100px;
-	background: #000;
-	background: rgba(0,0,0,.8);
-	z-index: 100;
-	display: none;
-	top: 0;
-	right: 0; 
-}
-	
-.reveal-modal {
-	visibility: hidden;
-	top: 183px; 
-	width: 110px;
-	right:  155px;
-	background: #FFF;
-	background: rgba(0,0,0,.8);
-	position: absolute;
-	z-index: 101;
-	padding: 3px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
-	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
-	-box-shadow: 0 0 10px rgba(0,0,0,.4);
-}
-		
-.reveal-modal-big {
-	visibility: hidden;
-	top: 170px; 
-	width: 110px;
-	right:  15px;
-	background: #FFF;
-	background: rgba(0,0,0,.8);
-	position: absolute;
-	z-index: 101;
-	padding: 3px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
-	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
-	-box-shadow: 0 0 10px rgba(0,0,0,.4);
 }

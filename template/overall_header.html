@@ -29,6 +29,7 @@
 	Original author:  Tom Beddard ( http://www.subBlue.com/ )
 	Modified by:      Melvin Garcia ( http://www.melvingarcia.com/ )
 -->
+
 <!-- INCLUDE _me_config.html -->
 <script type="text/javascript">
 // <![CDATA[
@@ -82,7 +83,18 @@
 
 <!-- IF $ME_COLOUR_SWITCHER -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="{T_TEMPLATE_PATH}/jquery.reveal.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+$(document).ready(function() {
+	$('.colour-block').mouseenter(function() {
+		$('.colour-block-hover').fadeIn('medium');
+	});
+	$('.colour-block-hover').mouseleave(function() {
+		$('.colour-block-hover').fadeOut('medium');
+	});
+});
+// ]]>
+</script>
 <!-- If the above line is already present, don't add it again -->
 <!-- ENDIF -->
 
@@ -178,21 +190,20 @@
 <!-- IF S_REGISTER_ENABLED and not S_USER_LOGGED_IN --><img src="{T_THEME_PATH}/images/add.png" width="16" height="16" alt="" /><a href="{U_REGISTER}">{L_REGISTER}</a><!-- ENDIF -->
 <!-- IF not S_USER_LOGGED_IN -->&nbsp; <img src="{T_THEME_PATH}/images/key.png" width="16" height="16" alt="" /><a href="{U_LOGIN_LOGOUT}" style="padding-right: 4px;">{L_LOGIN}</a><!-- ENDIF -->		
 <!-- IF $ME_COLOUR_SWITCHER -->
-		<img src="{T_THEME_PATH}/images/color_wheel.png" width="16" height="16" alt="" /><a href="#" data-reveal-id="myModal" data-animation="fade" style="padding-right: 4px;">
+<div class="colour-block" title="{L_COLOUR_SWATCH}">
+		<img src="{T_THEME_PATH}/images/color_wheel.png" width="16" height="16" alt="" />
 			{$ME_TEXT_COLOUR}
-		</a>
-		<div id="myModal" <!-- IF $ME_WIDTH != '100%' --> class="reveal-modal close-reveal-modal" <!-- ELSE -->class="reveal-modal-big close-reveal-modal"<!-- ENDIF --> title="Close">	               
-			    	<div class="colour-block">
+		<div class="colour-block-hover">
 			    			<a href="#" class="switch" id="prosilverme_red"><img src="{T_THEME_PATH}/images/prosilverme_red/red-cube.png" width="12" height="12" alt=""/></a>
 			    			<a href="#" class="switch" id="prosilverme_green"><img src="{T_THEME_PATH}/images/prosilverme_green/green-cube.png" width="12" height="12" alt=""/></a>
 			    			<a href="#" class="switch" id="prosilverme_black"><img src="{T_THEME_PATH}/images/prosilverme_black/black-cube.png" width="12" height="12" alt=""/></a>
 			    			<a href="#" class="switch" id="prosilverme_blue"><img src="{T_THEME_PATH}/images/prosilverme_blue/blue-cube.png" width="12" height="12" alt=""/></a>
 			    			<a href="#" class="switch" id="prosilverme_purple"><img src="{T_THEME_PATH}/images/prosilverme_purple/violet-cube.png" width="12" height="12" alt=""/></a>
 			    			<a href="#" class="switch" id="prosilverme_pink"><img src="{T_THEME_PATH}/images/prosilverme_pink/pink-cube.png" width="12" height="12" alt=""/></a>
-			    	</div>
-		</div>
+		</div><!-- /colour-block-hover -->
+</div>
 <!-- ENDIF -->
-		
+
 </div><!-- /float right end -->
 </div><!-- /end nav content -->
 </span>
