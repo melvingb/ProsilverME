@@ -268,8 +268,8 @@ table.table1 tbody tr:hover, table.table1 tbody tr.hover {
 }
 
 .postlink:visited {
-	color: #b7b7b7;
-	border-bottom-color: #b7b7b7;
+	color: #555454;
+	border-bottom-color: #555454;
 }
 
 .postlink:active {

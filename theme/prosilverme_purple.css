@@ -269,8 +269,8 @@ table.table1 tbody tr:hover, table.table1 tbody tr.hover {
 }
 
 .postlink:visited {
-	color: #bd5d5d;
-	border-bottom-color: #bd5d5d;
+	color: #533783;
+	border-bottom-color: #533783;
 }
 
 .postlink:active {
@@ -278,8 +278,8 @@ table.table1 tbody tr:hover, table.table1 tbody tr.hover {
 }
 
 .postlink:hover {
-	background-color: #f6d0d0;
-	color: #730d0d;
+	background-color: #ddd0f6;
+	color: #360d73;
 }
 
 .signature a, .signature a:visited, .signature a:hover, .signature a:active {
