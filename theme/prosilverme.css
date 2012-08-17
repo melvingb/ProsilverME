@@ -5,7 +5,7 @@
 
 div.colour-block  {
 	float: right;
-	height: 30px;
+	height: 20px;
 	display: block;	/* new function */
 	margin-top: 12px; /* new function */
 	padding-right: 6px;
