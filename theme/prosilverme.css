@@ -14,16 +14,20 @@ div.colour-block  {
 	color: #e34e0c;
 }
 
+/* saf3+, chrome1+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ div.colour-block   { 	margin-top: -37px; /* new function */  }
+}
+
 img.colour-block {
 	margin-right: 0px !important;
 }
 
 .colour-block-hover {
 	margin-top: -3px; /* new function */
-	margin-right: -3px;
 	background: #000;
-	background: rgba(0,0,0,.8);
-	padding: 3px;
+	background: rgba(0,0,0,.7);
+	padding: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;

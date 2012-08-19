@@ -83,18 +83,7 @@
 
 <!-- IF $ME_COLOUR_SWITCHER -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript">
-// <![CDATA[
-$(document).ready(function() {
-	$('.colour-block').mouseenter(function() {
-		$('.colour-block-hover').fadeIn('medium');
-	});
-	$('.colour-block-hover').mouseleave(function() {
-		$('.colour-block-hover').fadeOut('medium');
-	});
-});
-// ]]>
-</script>
+<script type="text/javascript" src="{T_TEMPLATE_PATH}/prosilverme_script.js"></script>
 <!-- ENDIF -->
 
 <link href="{T_THEME_PATH}/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
@@ -138,7 +127,6 @@ $(document).ready(function() {
 <!-- IF S_CONTENT_DIRECTION eq 'rtl' -->
 	<link href="{T_THEME_PATH}/bidi.css" rel="stylesheet" type="text/css" media="screen, projection" />
 <!-- ENDIF -->
-
 </head>
 
 <body id="phpbb" class="section-{SCRIPT_NAME} {S_CONTENT_DIRECTION}<!-- IF $ME_WIDTH != '100%' --> fixedwide<!-- ELSE --> fullwide<!-- ENDIF -->">
@@ -171,7 +159,6 @@ $(document).ready(function() {
 			<!-- ENDIF -->			
 			<span class="corners-bottom"><span></span></span></div>			
 		</div>
-
 <div class="navbg"><!-- /nav -->
 <span>
 <div id="navbg-content"><!-- /nav content -->
@@ -181,7 +168,9 @@ $(document).ready(function() {
 <!-- IF S_DISPLAY_SEARCH --><img src="{T_THEME_PATH}/images/icon_textbox_search.gif" width="16" height="14" alt="" /><a href="{U_SEARCH}">{L_SEARCH}</a> &nbsp;<!-- ENDIF -->
 <!-- IF S_USER_LOGGED_IN -->
 <img src="{T_THEME_PATH}/images/group.png" width="16" height="16" alt="" /><a href="{U_MEMBERLIST}">{L_MEMBERLIST}</a> &nbsp;
-<img src="{T_THEME_PATH}/images/user_edit.png" width="16" height="16" alt="" /><a href="{U_PROFILE}">{L_PROFILE}</a>
+<img src="{T_THEME_PATH}/images/user_edit.png" width="16" height="16" alt="" /><a href="{U_PROFILE}">{L_PROFILE}</a> &nbsp;
+<img src="{T_THEME_PATH}/images/email_add.png" width="16" height="16" alt="" /><!-- IF S_USER_NEW_PRIVMSG or PRIVATE_MESSAGE_INFO_UNREAD --><a href="{U_PRIVATEMSGS}" style=" color: #FF0000;">{PRIVATE_MESSAGE_INFO}<!-- IF S_USER_NEW_PRIVMSG --><!-- ELSE --><!-- ENDIF --></a>
+                    <!-- ELSE --><a href="{U_PRIVATEMSGS}" >{PRIVATE_MESSAGE_INFO}</a><!-- ENDIF -->	
 <!-- ENDIF -->
 </div><!-- /float left end -->
 <div style="float: right;"><!-- /float right -->
@@ -222,4 +211,4 @@ $(document).ready(function() {
 				<strong>{L_INFORMATION}:</strong> {L_BOARD_DISABLED}
 			<span class="corners-bottom"><span></span></span></div>
 		</div>
-		<!-- ENDIF -->
+		<!-- ENDIF -->	
