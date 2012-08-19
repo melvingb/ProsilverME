@@ -127,6 +127,14 @@
 <!-- IF S_CONTENT_DIRECTION eq 'rtl' -->
 	<link href="{T_THEME_PATH}/bidi.css" rel="stylesheet" type="text/css" media="screen, projection" />
 <!-- ENDIF -->
+<!--[if IE]> 
+<style type="text/css">
+div.navbg {
+	width: 99.5%;
+	padding-right: 6px;
+}
+</style>
+<![endif]-->
 </head>
 
 <body id="phpbb" class="section-{SCRIPT_NAME} {S_CONTENT_DIRECTION}<!-- IF $ME_WIDTH != '100%' --> fixedwide<!-- ELSE --> fullwide<!-- ENDIF -->">
