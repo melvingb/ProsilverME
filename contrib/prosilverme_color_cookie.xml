@@ -28,17 +28,17 @@
 			<author>
 				<realname><![CDATA[Melvin Garcia]]></realname>
 				<username><![CDATA[nextgen]]></username>
-				<homepage><![CDATA[http://www.phpbbnxg.com]]></homepage>
-				<email><![CDATA[webmaster@phpbbnxg.com]]></email>
+				<homepage><![CDATA[http://www.melvingarcia.com]]></homepage>
+				<email><![CDATA[nextgen@phpbbnxg.com]]></email>
 			</author>
 		</author-group>
 
-		<mod-version>[ALPHA] 0.0.5</mod-version>
+		<mod-version>1.1.0</mod-version>
 
 		<installation>
 			<level>easy</level>
 			<time>120</time>
-			<target-version>3.0.9 - 3.0.10</target-version>
+			<target-version>3.0.11</target-version>
 		</installation>
 
 	</header>
@@ -60,18 +60,24 @@
 	Variables you can configure below: 
 	$ME_PROFILES = Display poster profiles on left or right side of viewtopic : 'left'/'right'
 	$ME_COLOUR_SWITCHER = Display the "Colour switcher" box on nav bar? 1 = enabled/visible, 0 = disabled/hidden.
-	$ME_COLOUR_DEFAULT = Choose the default colour : 'red'/'green'/'black'/'blue' / 'pink' / 'purple'
+	$ME_COLOUR_DEFAULT = Choose the default colour : 'red' / 'green' / 'black' /'blue' / 'pink' / 'purple'
 	$ME_WIDTH = Choose your width : 940px = Fixed/100% = Fluid
-	$ME_SIDEBAR = This option enable or disable the sidebar : 'none' = disabled / 'left' = enable a sidebar al left side / 'right'  = enable a sidebar at right side]]></diy-instructions>
+	$ME_SIDEBAR = This option enable or disable the sidebar : 'none' = disabled / 'left' = enable a sidebar al left side / 'right'  = enable a sidebar at right side
+	$USE_IMAGESET_LOGO = If you have a logo image, change '0' to '1' use ACP to set the board logo (ACP -> Styles -> Imagesets)
+    $ME_DRAGG_CAT = Allows users to re-order the category list '1' = yes / '0' = not
+    $ME_TEXT_COLOUR = The text to display in the navbg (Useful for boards using a foreign language).]]></diy-instructions>
 		<diy-instructions lang="es"><![CDATA[Personalizaciones de estilo:
 	Abrr : root/styles/prosilverme/_me_config.html
 	
 	Las variables se pueden configurar a continuación:
 	$ME_PROFILES_ON_LEFT = Mostrar los perfiles de autores al lado derecho o izquierdo de pantalla en vista de temas: 1 = izquierda, 0 = derecha.
 	$ME_COLOUR_SWITCHER = Mostrar el "Selector de Color" en la barra de navegación? 1 = activado/visible, 0 = desactivado/oculta.
-	$ME_COLOUR_DEFAULT = Elija el color por defecto: 'red' / 'geen' / 'black' / 'blue' / 'pink' / 'purple'
+	$ME_COLOUR_DEFAULT = Elija el color por defecto: 'red' / 'green' / 'black' / 'blue' / 'pink' / 'purple'
 	$ME_WIDTH = Elija su ancho: 940px = fijo/100% = fluido
-	$ME_SIDEBAR = Esta opción activa o desactiva la barra lateral: 'none' = desactivado / 'left' = activar una barra lateral al lado izquierdo / 'right' = activar una barra lateral en el lado derecho]]></diy-instructions>
+	$ME_SIDEBAR = Esta opción activa o desactiva la barra lateral: 'none' = desactivado / 'left' = activar una barra lateral al lado izquierdo / 'right' = activar una barra lateral en el lado derecho
+	$USE_IMAGESET_LOGO = Si usted tiene una imagen para el logo, change '0' a '1' Use el ACP para configurar el logo del foro (ACP -> Estilos -> Galeria de imagenes)
+    $ME_DRAGG_CAT = Permite a los usuarios cambiar el orden de la lista de categorías '1' = si / '0' = no
+    $ME_TEXT_COLOUR = El texto que se mostrará en la navbg (Útil para foros que útilizan otro idioma).]]></diy-instructions>
 
 	</action-group>
 </mod>
