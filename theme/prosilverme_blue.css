@@ -328,28 +328,6 @@ ul.topiclist li.row dt a.subforum.read {
 ul.topiclist li.row dt a.subforum.unread {
 }
 
-li.row {
-	border-top-color:  #FFFFFF;
-	border-bottom-color: #ccc;
-}
-
-li.row strong {
-	color: #000000;
-}
-
-li.row:hover {
-	background-color: #F6F4D0;
-}
-
-li.row:hover dd {
-	border-left-color: #CCCCCC;
-}
-
-.rtl li.row:hover dd {
-	border-right-color: #CCCCCC;
-	border-left-color: transparent;
-}
-
 li.header dt, li.header dd {
 	color: #FFFFFF;
 }

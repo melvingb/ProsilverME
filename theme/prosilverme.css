@@ -392,3 +392,26 @@ div.navbg span, div.navbg span a {
 	margin-top: -6px;
 	margin-right: 6px;
 }
+
+/******************** row1 and row2 ********************/
+li.row {
+	background: #E4E4E4 url("{T_THEME_PATH}/images/row1.gif") repeat-x scroll left top;
+	border-top-color: #FFFFFF;
+}
+
+li.row strong {
+	color: #000000;
+}
+
+li.row:hover {
+	background: #DADADA url("{T_THEME_PATH}/images/row2.gif") repeat-x scroll left top;
+}
+
+li.row:hover dd {
+	border-left-color: #CCCCCC;
+}
+
+.rtl li.row:hover dd {
+	border-right-color: #CCCCCC;
+	border-left-color: transparent;
+}

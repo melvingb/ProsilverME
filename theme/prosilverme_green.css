@@ -178,16 +178,6 @@ a:link, a:visited { color: #1b8910; }
 a:hover	{ color: #D31141; }
 a:active	{ color: #36d241; }
 
-/* li row color */
-li.row {
-	border-top-color:  #FFFFFF;
-	border-bottom-color: #ccc;
-}
-
-li.row:hover {
-	background-color: #d0f6d5;
-}
-
 /* Table styles
 ----------------------------------------*/
 table.table1 tbody tr:hover, table.table1 tbody tr.hover {
