@@ -354,6 +354,7 @@ div.navbg {
 	line-height: 49px;
 	width: 100%;
 	margin-bottom: 20px;
+	z-index: 999;	
 }
 
 div.navbg span {
