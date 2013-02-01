@@ -46,10 +46,8 @@ body.fixedwide {
 }
 
 /** wrappers **/
-#wrap {
-	background-color: #ffffff;
-}
 #wrap.fixedwide {
+	background-color: #ffffff;
 	border: 2px solid #ffffff;
 	margin: 0 auto;
 	padding: 1em;

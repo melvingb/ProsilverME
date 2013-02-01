@@ -188,10 +188,6 @@ li.row {
 	border-bottom-color: #ccc;
 }
 
-li.row:hover {
-	background-color: #f3d0f6;
-}
-
 /* Table styles
 ----------------------------------------*/
 table.table1 tbody tr:hover, table.table1 tbody tr.hover {
